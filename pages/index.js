@@ -1,65 +1,22 @@
 import Head from 'next/head'
-import styles from '../styles/Home.module.css'
-
+import Link from 'next/link'
 export default function Home() {
   return (
-    <div className={styles.container}>
-      <Head>
-        <title>Create Next App</title>
-        <link rel="icon" href="/favicon.ico" />
-      </Head>
-
-      <main className={styles.main}>
-        <h1 className={styles.title}>
-          Welcome to <a href="https://nextjs.org">Next.js!</a>
-        </h1>
-
-        <p className={styles.description}>
-          Get started by editing{' '}
-          <code className={styles.code}>pages/index.js</code>
-        </p>
-
-        <div className={styles.grid}>
-          <a href="https://nextjs.org/docs" className={styles.card}>
-            <h3>Documentation &rarr;</h3>
-            <p>Find in-depth information about Next.js features and API.</p>
-          </a>
-
-          <a href="https://nextjs.org/learn" className={styles.card}>
-            <h3>Learn &rarr;</h3>
-            <p>Learn about Next.js in an interactive course with quizzes!</p>
-          </a>
-
-          <a
-            href="https://github.com/vercel/next.js/tree/master/examples"
-            className={styles.card}
-          >
-            <h3>Examples &rarr;</h3>
-            <p>Discover and deploy boilerplate example Next.js projects.</p>
-          </a>
-
-          <a
-            href="https://vercel.com/import?filter=next.js&utm_source=create-next-app&utm_medium=default-template&utm_campaign=create-next-app"
-            className={styles.card}
-          >
-            <h3>Deploy &rarr;</h3>
-            <p>
-              Instantly deploy your Next.js site to a public URL with Vercel.
-            </p>
-          </a>
-        </div>
-      </main>
-
-      <footer className={styles.footer}>
-        <a
-          href="https://vercel.com?utm_source=create-next-app&utm_medium=default-template&utm_campaign=create-next-app"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Powered by{' '}
-          <img src="/vercel.svg" alt="Vercel Logo" className={styles.logo} />
-        </a>
-      </footer>
-    </div>
+    <>
+    <h1>On se perd parfois</h1>
+      <h2>Nicholas Mandelbum</h2>
+      <ul>
+    <li><Link href='/lire/chapitre-1'><a>Chapitre 1</a></Link></li>
+    <li><Link href='/lire/chapitre-2'><a>Chapitre 2</a></Link></li>
+    <li><Link href='/lire/chapitre-3'><a>Chapitre 3</a></Link></li>
+    <li><Link href='/lire/chapitre-4'><a>Chapitre 4</a></Link></li>
+    <li><Link href='/lire/chapitre-5'><a>Chapitre 5</a></Link></li>
+    <li><Link href='/lire/chapitre-6'><a>Chapitre 6</a></Link></li>
+    <li><Link href='/lire/chapitre-7'><a>Chapitre 7</a></Link></li>
+    <li><Link href='/lire/chapitre-8'><a>Chapitre 8</a></Link></li>
+    <li><Link href='/lire/chapitre-9'><a>Chapitre 9</a></Link></li>
+        <li><Link href='/lire/chapitre-10'><a>Chapitre 10</a></Link></li>
+        </ul>
+    </>
   )
 }
