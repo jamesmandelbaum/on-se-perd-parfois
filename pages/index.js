@@ -1,9 +1,8 @@
-import Head from 'next/head'
 import Link from 'next/link'
 export default function Home() {
   return (
     <>
-    <h1>On se perd parfois</h1>
+      <h1>On se perd parfois</h1>
       <h2>Nicholas Mandelbum</h2>
       <ul>
         <li><Link href='/lire/chapitre-01'><a>Chapitre 1</a></Link></li>

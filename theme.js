@@ -29,8 +29,20 @@ const theme = {
     },
     h1: {
       color: '#477fc6',
-      fontSize: 64
-    }
+      fontSize: 64,
+      lineHeight: 1.2
+    },
+    h2: {
+      color: '#477fc6',
+      fontSize: 32,
+      lineHeight: 1.2
+    },
+    h3: {
+      color: '#1f3551',
+      fontSize: 24,
+      lineHeight: 1.2
+    },
+
 
   }
 }
