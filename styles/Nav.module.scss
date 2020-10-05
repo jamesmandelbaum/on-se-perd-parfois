@@ -17,12 +17,12 @@
       display: block;
       transition: all .3s ease;
       &:hover {
-        background-color: #ADD8EA;
-        color: #69876C;
+        background-color: #c1d3da;
+        color: white;
       }
       &.active {
         background-color: #ADD8EA;
-        color: #69876C;
+        color:white;
       }
       }
     }
