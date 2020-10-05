@@ -1,11 +1,27 @@
 .nav {
   display: flex;
   flex-direction: column;
+  position: fixed;
+  transition: all .3s ease;
+  top: 0;
+  &.hide {
+    top: -64px;
+  }
+  ul {
+    display: flex;
+    width: 100%;
+    list-style-type: none;
+    justify-content: space-between; 
+  }
+  .title {
+    h1 {
+      font-size: 14px;
+    }
+    h2 {
+      font-size: 12px;
+    }
+  }
 }
 
-.ul {
-  display: flex;
-  width: 100%;
-  list-style-type: none;
-  justify-content: space-between; 
-}
+
+

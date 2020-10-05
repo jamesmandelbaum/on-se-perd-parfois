@@ -4,10 +4,10 @@ import styles from '../../styles/Nav.module.scss'
 const Nav = () => {
 return( 
     <div className={styles.nav}>
-      <div>
-      <Link href='/'>←</Link>
+      <div className={styles.title}>
+        <Link href='/'><a>←</a></Link>
         <h1>On se perd parfois </h1>
-        <h2>Nicholas Mandelbum</h2>
+        <h2>Nicholas Mandelbaum</h2>
       </div>
       <ul className={styles.ul}>
         <li><Link href='/lire/chapitre-01'><a>1</a></Link></li>
