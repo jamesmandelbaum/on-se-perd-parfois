@@ -1,27 +1,30 @@
-.nav {
-  display: flex;
-  flex-direction: column;
-  position: fixed;
-  transition: all .3s ease;
-  top: 0;
-  &.hide {
-    top: -64px;
-  }
-  ul {
+.ul {
     display: flex;
+    flex-direction: row;
     width: 100%;
     list-style-type: none;
     justify-content: space-between; 
-  }
-  .title {
-    h1 {
-      font-size: 14px;
+    padding: 0 2rem 4rem;
+    margin: 0;
+    li {
+      background: white;
+      display: flex;
+      a {
+      //margin: 3px 25px 3px;
+      color: #ddd;
+      width: clamp(4vw,1vw,8vw);
+      text-align: center;
+      display: block;
+      transition: all .3s ease;
+      &:hover {
+        background-color: #ADD8EA;
+        color: #69876C;
+      }
+      &.active {
+        background-color: #ADD8EA;
+        color: #69876C;
+      }
+      }
     }
-    h2 {
-      font-size: 12px;
-    }
   }
-}
-
-
-
+  

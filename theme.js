@@ -1,19 +1,15 @@
-
 const theme = {
   useBodyStyles: true,
   colors: {
     primary: '#ADD8EA',
     secondary: '#69876C',
-
   },
   fonts: {
-    body: 'DM Serif',
+    body: 'DM Serif Text',
     heading: 'DM Serif Display',
   },
   styles: {
-
     root: {
-      paddingTop: 64,
       backgroundColor: '#F6F6F6',
       fontFamily: 'body',
       fontWeight: 'body',
@@ -21,28 +17,24 @@ const theme = {
     p: {
       fontSize: 20,
       lineHeight: '1.5',
-      color: '#1f3551'
+      color: '#5E5E5E'
     },
     h1: {
       color: '#ADD8EA',
-      fontSize: 64,
+      fontSize: 92,
       lineHeight: 1.2
     },
     h2: {
-      color: '#69876C',
-      fontSize: 32,
+      color: '#ADD8EA',
+      fontSize: 36,
       lineHeight: 1.2
     },
     h3: {
-      color: '#1f3551',
+      color: '#69876C',
       fontSize: 24,
       lineHeight: 1.2
     },
-
-
   }
 }
-
-console.log(theme)
 
 export default theme
