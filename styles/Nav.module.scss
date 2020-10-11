@@ -1,29 +1,37 @@
 .ul {
     display: flex;
     flex-direction: row;
-    width: 100%;
     list-style-type: none;
     justify-content: space-between; 
-    padding: 0 2rem 4rem;
+    padding: 0;
     margin: 0;
-    position: relative;
+    width: auto;
     z-index: 2;
     li {
       background: white;
       display: flex;
+      &:first-of-type {
+        background: transparent;
+        a {
+          width: clamp(60px,auto,200px);
+          text-align: left;
+          font-size: clamp(0.2rem,1.4vw,1rem);
+        }
+      }
       a {
       //margin: 3px 25px 3px;
       color: rgb(162, 182, 199);
       padding: 0.25rem;
-      width: clamp(4vw,1vw,8vw);
+      width: clamp(30px,6vw,120px);
       text-align: center;
       display: block;
-      transition: all .3s ease;
+      transition: background-color .3s ease;
+      max-height: 2rem;
       &:hover {
-        background-color: #c1d3da;
+        background-color: #9ecde0;
         color: white;
       }
-      &.active {
+      &.active, &:active {
         background-color: #ADD8EA;
         color:white;
       }
@@ -43,8 +51,12 @@
       padding: 0.25rem;
       transition: all .3s ease;
       &:hover {
-        background-color: #c1d3da;
+        background-color: #ADD8EA;
         color: white;
+      }
+      &:active  {
+        background-color: #9ecde0;
+        color:white;
       }
 
       }

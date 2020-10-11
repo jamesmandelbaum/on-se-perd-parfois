@@ -1,4 +1,4 @@
-import type { AppProps /*, AppContext */ } from 'next/app'
+import type { AppProps } from 'next/app'
 import { useRouter } from 'next/router'
 import { ThemeProvider } from 'theme-ui'
 import theme from '../theme'

@@ -9,7 +9,7 @@ export const Header: React.FC = () => {
 	const { pathname } = useRouter()
 	return( 
 		<ul className={styles.ul}>
-			<li><Link href='/'><a>←</a></Link></li>
+			<li><Link href='/'><a>On se perd parfois</a></Link></li>
 			{chapters.map(
 				(chapter) => 
 					<li key={chapter}><Link href={`/lire/chapitre-${chapter}`}>
