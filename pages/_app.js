@@ -1,16 +1,28 @@
-import { ThemeProvider } from 'theme-ui'
-import theme from '../theme.js'
-import Layout from '../src/components/Layout'
-import '../styles/globals.css'
+import { useRouter } from "next/router";
+import { ThemeProvider } from "theme-ui";
+import theme from "../theme.js";
+import Layout from "../src/components/Layout";
+import ChapitreLayout from "../src/components/ChapitreLayout";
+
+import "../styles/globals.css";
 
 function MyApp({ Component, pageProps }) {
-  return(
+  const { pathname } = useRouter();
+  return (
     <ThemeProvider theme={theme}>
-      <Layout>
-        <Component {...pageProps} />
-      </Layout> 
-  </ThemeProvider>
-  )
+      {pathname.includes("lire/") ? (
+        <Layout>
+          <ChapitreLayout>
+            <Component {...pageProps} />
+          </ChapitreLayout>
+        </Layout>
+      ) : (
+        <Layout>
+          <Component {...pageProps} />
+        </Layout>
+      )}
+    </ThemeProvider>
+  );
 }
 
-export default MyApp
+export default MyApp;
